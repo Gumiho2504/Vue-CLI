@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <BaseLayout>
+      <div slot="header">
+        <h1>Hello from GumiHo</h1>
+      </div>
+      <div slot="main">
+        <h3>Hello from Ronaldo</h3>
+      </div>
+      <div slot="footer">
+        <h2>Hello from Messi</h2>
+      </div>
+      
+    </BaseLayout>
+  
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import BaseLayout from './components/BaseLayout_Slot.vue'
 
 export default {
+ 
   name: 'App',
-  components: {
-    HelloWorld
+  components: { 
+    BaseLayout
+
   }
 }
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
